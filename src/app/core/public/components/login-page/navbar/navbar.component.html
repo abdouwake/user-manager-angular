@@ -1,0 +1,35 @@
+<nav
+  class="navbar sticky-top navbar-light bg-light justify-content-between navbarShadow"
+>
+  <a class="navbar-brand"
+    ><img
+      class="headerLogo"
+      src="https://www.jobillico.com/medias/logo-entreprise/0/0/exp_logo_9553_fr_2021_04_27_16_03_24.png"
+    />
+  </a>
+  <div class="form-inline d-flex m-1 align-items-center">
+    <div style="height: 35px"></div>
+
+    <div class="d-flex align-items-center" *ngIf="isConnected()">
+      <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+        <button
+          style="border: none"
+          type="button"
+          class="btn btn-outline-primary nohover me-2"
+          id="dropdownManual"
+          ngbDropdownAnchor
+          (focus)="myDrop.open()"
+        >
+          <img
+            src="https://png.pngtree.com/png-vector/20190625/ourlarge/pngtree-business-male-user-avatar-vector-png-image_1511454.jpg"
+            class="userAvatar"
+          />
+          Abdesselam
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownManual">
+          <button (click)="logOut()" ngbDropdownItem>Log out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

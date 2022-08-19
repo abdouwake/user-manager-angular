@@ -1,0 +1,81 @@
+<div style="width: 350px">
+  <div class="textClass mb-3">
+    <i class="bi bi-box-arrow-in-right"> </i>
+    <span class="p-4"> Inscription </span>
+  </div>
+
+  <div>
+    <form onSubmit="()=>{}">
+      <div class="form-group stickLeft mb-3">
+        <label class="labelStyling" htmlFor="InputEmail1">Adresse E-mail</label>
+        <input
+          [(ngModel)]="username"
+          (ngModelChange)="setCanSubscribe()"
+          required
+          [pattern]="patternEmail"
+          type="email"
+          name="email"
+          class="form-control"
+          aria-required="true"
+          aria-describedby="emailHelp"
+          placeholder="Adresse E-mail "
+        />
+      </div>
+
+      <div class="form-group stickLeft mb-3">
+        <label class="labelStyling" htmlFor="InputPassword1"
+          >Mot de passe</label
+        >
+        <input
+          [(ngModel)]="password"
+          (ngModelChange)="checkPassword(); setCanSubscribe()"
+          type="password"
+          required="true"
+          class="form-control"
+          name="up1"
+          placeholder="Mot de passe"
+        />
+      </div>
+      <app-strength-pass *ngIf="password != ''"></app-strength-pass>
+
+      <div class="form-group stickLeft">
+        <label class="labelStyling" htmlFor="InputPassword2"
+          >Confirmation du mot de passe</label
+        >
+
+        <input
+          [(ngModel)]="passwordConf"
+          (ngModelChange)="checkPassword(); setCanSubscribe()"
+          name="up2"
+          type="password"
+          required="true"
+          class="form-control"
+          placeholder="Confirmer votre mot de passe"
+        />
+      </div>
+      <br />
+
+      <div *ngIf="passwordConf != password" appErreurMessage>
+        Les deux mot de passe ne correspondent pas.
+      </div>
+      <br />
+      <div style="text-align: center">
+        <button
+          type="submit"
+          (click)="onClickRegister()"
+          class="btn btn-outline-danger btnCustomCgi m-2"
+          [disabled]="canSubscribe"
+        >
+          S'inscrire
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div style="text-align: center">
+    <span class="-4"> ou </span>
+    <div class="center">
+      <a class="hrefClass" routerLink="/login">Connectez vous</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<div style="width: 350px">
+  <div class="textClass">
+    <i class="bi bi-box-arrow-in-right"> </i>
+    <span id="connexionFormLogin" class="p-4">
+      <mat-icon>exit_to_app</mat-icon> Connexion
+    </span>
+  </div>
+  <br />
+
+  <div>
+    <form onSubmit="()=>{}">
+      <div class="form-group stickLeft">
+        <label class="labelStyling" htmlFor="InputEmail1">Adresse E-mail</label>
+        <input
+          [(ngModel)]="username"
+          [pattern]="patternEmail"
+          name="email"
+          type="email"
+          required="true"
+          class="form-control"
+          id="InputEmail1"
+          placeholder="Adresse E-mail "
+        />
+      </div>
+
+      <br />
+
+      <div class="form-group stickLeft">
+        <label class="labelStyling" htmlFor="InputPassword1"
+          >Mot de passe</label
+        >
+        <input
+          [(ngModel)]="password"
+          name="password"
+          type="password"
+          required="true"
+          class="form-control"
+          placeholder="Mot de passe"
+        />
+      </div>
+      <br />
+      <div style="text-align: center">
+        <button
+          [disabled]="username === '' || password === ''"
+          (click)="onClickLogin()"
+          type="submit"
+          class="btn btn-outline-danger btnCustomCgi m-2"
+        >
+          Se connecter
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div style="text-align: center">
+    <span class="-4"> ou </span>
+    <div class="center">
+      <a routerLink="/sign-in" class="hrefClass">Créer un compte</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+.textClass {
+  color: var(--redCgi);
+  font-family: "Sora", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+.navbarShadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.labelStyling {
+  color: #6e6e6e;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+.hrefClass {
+  color: var(--blueCgi);
+  text-decoration: none;
+}
+
+.hrefClass:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+@media (min-width: 992px) {
+  .avatarUserDetails {
+    height: 200px;
+    width: auto;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .avatarUserDetails {
+    height: 120px;
+    width: auto;
+    border-radius: 20px;
+  }
+}
+
+.localisationDetails {
+  color: #6e6e6e;
+  font-size: 13px;
+}
+
+.nomCompletDetails {
+  color: #3f3f3f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jobTitle {
+  color: dodgerblue;
+}
+
+.carteUserDetail {
+  max-width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.userList {
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--redCgi);
+  font-family: "Sora", sans-serif;
+}

@@ -1,0 +1,19 @@
+.validationFormElements {
+  font-size: 13px;
+}
+
+.stickLeft {
+  text-align: left;
+}
+
+.check {
+  color: green;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.errorCheck {
+  color: red;
+  font-weight: 600;
+  margin-right: 10px;
+}

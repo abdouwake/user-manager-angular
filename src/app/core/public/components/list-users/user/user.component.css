@@ -1,0 +1,52 @@
+.cardUser {
+  height: 300px;
+  min-width: 270px;
+  border-radius: 10px;
+  box-shadow: rgba(215, 226, 238, 0.2) 0px 8px 24px;
+  background-color: #ffffff;
+  transition: 0.5s;
+}
+
+.cardUser:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.avatarCard {
+  height: 100px;
+  width: 100px;
+  border-radius: 200px;
+  border: var(--redCgi) solid 1px;
+}
+
+.hearPicto {
+  color: grey;
+}
+.hearPicto:hover {
+  color: var(--redCgi);
+  cursor: pointer;
+}
+
+.leftSide {
+  margin-right: 20px;
+}
+
+.emailAdress {
+  text-align: center;
+  color: #848484;
+}
+
+.cardUser {
+  height: 300px;
+  margin: 6px;
+  border-radius: 10px;
+  box-shadow: rgba(215, 226, 238, 0.2) 0px 8px 24px;
+  background-color: #ffffff !important;
+  transition: 0.5s;
+}
+
+.cardUser:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}

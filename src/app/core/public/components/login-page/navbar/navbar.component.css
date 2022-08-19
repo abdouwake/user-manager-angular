@@ -1,0 +1,14 @@
+.headerLogo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  height: 30px;
+}
+.userAvatar {
+  height: 35px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.navbarShadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

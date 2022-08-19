@@ -1,0 +1,30 @@
+<div class="col-xl-3 col-lg-6 statCard">
+  <div class="card-stats mb-4 mb-xl-0 p-4">
+    <div class="card-body statDisposition">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col flex-column justify-content-center statDisposition">
+          <h5 class="card-title h6 text-uppercase text-muted mb-0">
+            {{ stat.statName }}
+          </h5>
+          <span class="h3 font-weight-bold mb-0 statChiffre">
+            {{ stat.statValue }}</span
+          >
+        </div>
+        <div
+          class="icon icon-shape bg-danger d-lg-flex d-none text-white rounded-circle d-flex align-items-center justify-content-center"
+          style="width: 60px; height: 60px"
+        >
+          <mat-icon style="font-size: 28px"> {{ stat.pictoClass }}</mat-icon>
+        </div>
+      </div>
+      <p
+        class="mt-3 mb-0 text-muted text-sm d-lg-flex d-none align-items-center"
+      >
+        <span class="text-success mr-2" [ngClass]="stat">
+          {{ stat.variation }}
+        </span>
+        <span class="text-nowrap m-2">Since last month</span>
+      </p>
+    </div>
+  </div>
+</div>

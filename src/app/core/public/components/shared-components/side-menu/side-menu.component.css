@@ -1,0 +1,35 @@
+.userAvatar {
+  height: 35px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.itemSide {
+  height: 70px;
+  width: 60px;
+  transition: 0.5s;
+}
+
+.pictoMenu {
+  font-size: 25px !important;
+  color: #8c8c8c;
+}
+
+.pictoMenu:hover {
+  color: var(--redCgi);
+  font-size: 25px;
+}
+
+.activePicto {
+  color: var(--redCgi);
+}
+
+.itemSide:hover {
+  cursor: pointer;
+  transform: translateX(3px);
+  transition: 0.3s;
+}
+
+.navbarShadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

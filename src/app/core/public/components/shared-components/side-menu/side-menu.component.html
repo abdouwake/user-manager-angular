@@ -1,0 +1,12 @@
+<div
+  class="p-4 pictoMenu"
+  style="width: 100px; min-height: 94vh; background-color: white"
+>
+  <div
+    *ngFor="let item of elements"
+    [ngClass]="item.picto === 'supervisor_account' ? 'activePicto' : ''"
+    class="d-flex pictoMenu itemSide flex-row align-items-center justify-content-center"
+  >
+    <mat-icon style="font-size: 28px">{{ item.picto }}</mat-icon>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+.bodyPage {
+  flex: 1;
+  overflow: auto;
+}
+
+.centerUnknown {
+  vertical-align: middle;
+  height: 90vh;
+}
+
+.headerLogo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  height: 30px;
+}
+
+.textClass {
+  color: var(--redCgi);
+  font-family: "Sora", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.btnCustomCgi {
+  width: 150px;
+}
+
+.labelStyling {
+  color: #6e6e6e;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.validationFormElements {
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.check {
+  color: green;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.errorCheck {
+  color: red;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.errorMessageConfirmation {
+  font-size: 13px;
+  color: red;
+}
+
+.connectPart {
+  margin-right: 10px;
+  color: var(--orangeCgi);
+}
+
+.hrefClass {
+  color: var(--blueCgi);
+  text-decoration: none;
+}
+
+.hrefClass:hover {
+  cursor: pointer;
+}
+
+.modalContainer {
+  background-color: #ffff;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media (min-width: 992px) {
+  .loginPicture {
+    height: 400px;
+  }
+
+  .modalContainer {
+    width: 900px;
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  .modalContainer {
+    width: 400px;
+    min-height: 700px;
+  }
+}

@@ -1,0 +1,29 @@
+<div class="cardUser d-flex flex-column justify-content-between p-2 child">
+  <div class="cardHeader d-flex justify-content-end">
+    <mat-icon class="hearPicto">star_border</mat-icon>
+  </div>
+
+  <div class="pictureSection d-flex flex-row justify-content-center">
+    <img class="avatarCard" src="{{ user.avatar }}" />
+  </div>
+
+  <div class="completeName p1"></div>
+
+  <div class="emailAdress">{{ user.email }}</div>
+
+  <div class="footerSection d-flex justify-content-between p-3">
+    <div class="leftSide">
+      <button
+        class="btn btn-outline-primary"
+        (click)="onClickUpdate(user, $event)"
+      >
+        Modifier
+      </button>
+    </div>
+    <div class="rightSide">
+      <button class="btn btn-outline-danger" [routerLink]="['/user', user.id]">
+        Consulter
+      </button>
+    </div>
+  </div>
+</div>

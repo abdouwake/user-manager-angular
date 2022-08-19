@@ -1,0 +1,66 @@
+<Form onSubmit="()=>{}" class="m-5">
+  <div style="color: brown" class="d-flex justify-content-between">
+    <h4 style="color: brown">{{ title }}</h4>
+    <mat-icon>supervised_user_circle</mat-icon>
+  </div>
+  <hr />
+  <div class="mb-3">
+    <div class="labelInput">Email address</div>
+    <input
+      name="email"
+      [(ngModel)]="email"
+      type="email"
+      placeholder="name@example.com"
+      class="form-control"
+      aria-required="{true}"
+      autoFocus
+    />
+  </div>
+
+  <div class="mb-3">
+    <div class="labelInput">Nom</div>
+    <input
+      name="Nom"
+      [(ngModel)]="last_name"
+      type="'Nom'"
+      class="form-control"
+      aria-required="true"
+      placeholder="Entrez un nom"
+      autoFocus
+    />
+  </div>
+
+  <div class="mb-3">
+    <div class="labelInput">Prénom</div>
+    <input
+      name="Prenom"
+      [(ngModel)]="first_name"
+      aria-required="true"
+      class="form-control"
+      type="Prénom"
+      placeholder="Entrez un Prénom"
+      autoFocus
+    />
+  </div>
+
+  <div style="width: 100%; text-align: right">
+    <button class="btn btn-secondary m-2" (click)="closeModal($event)">
+      Retour
+    </button>
+    <button
+      (click)="onClickAdd($event)"
+      class="btn btn-outline-danger btnCustomCgi m-2"
+      *ngIf="createMode; else update"
+    >
+      Add
+    </button>
+    <ng-template #update>
+      <button
+        class="btn btn-outline-danger btnCustomCgi m-2"
+        (click)="onClickUpdate($event)"
+      >
+        Update
+      </button>
+    </ng-template>
+  </div>
+</Form>

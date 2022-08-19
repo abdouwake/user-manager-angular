@@ -1,0 +1,25 @@
+<ul class="validationFormElements stickLeft">
+  <li>
+    <span class="check" *ngIf="containsNb; else errorTemplate">✓</span>
+    <ng-template #errorTemplate>
+      <span class="errorCheck">X </span>
+    </ng-template>
+    8 Caractères au minimum
+  </li>
+
+  <li>
+    <span class="check" *ngIf="containsUpper; else errorTemplate">✓</span>
+    <ng-template #errorTemplate>
+      <span class="errorCheck">X </span>
+    </ng-template>
+    1 lettre majuscule au minimum
+  </li>
+
+  <li>
+    <span class="check" *ngIf="passLength; else errorTemplate">✓</span>
+    <ng-template #errorTemplate
+      ><span class="errorCheck">X </span>
+    </ng-template>
+    1 chiffre au minimum
+  </li>
+</ul>
